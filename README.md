@@ -39,5 +39,5 @@ Ardından son olarak şunları yapın:
 
 ```bash
 cd aperfetch
-bash Scripts/linux.sh (temux ise termux.sh yazın.)
+bash linux.sh (termux ise termux.sh yazın.)
 ```
