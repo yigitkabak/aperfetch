@@ -25,15 +25,19 @@ aperfetch, sisteminizin temel bilgilerini, hoş ve sade bir **ASCII logosu** eş
 
 ## Nasıl Çalışır?
 
-aperfetch, sistem bilgilerini toplamak için çeşitli komut satırı araçlarından (örneğin `uname`, `lspci`, `getprop`, `wmic`, `sysctl`, `xrandr`, `dpkg`, vb.) ve Rust'ın `systemstat` kütüphanesinden faydalanır. Topladığı bu bilgileri, zarif bir ASCII logosuyla birlikte hizalı bir şekilde terminalinize yazdırır.
+aperfetch, sistem bilgilerini toplamak için çeşitli komut satırı araçlarından (örneğin `uname`, `lspci`, `getprop`, `wmic`, `sysctl`, `xrandr`, `dpkg`, vb.) ve Go'nun `gopsutil` kütüphanesinden faydalanır. Topladığı bu bilgileri, zarif bir ASCII logosuyla birlikte hizalı bir şekilde terminalinize yazdırır.
 
 ## Kurulum
-**ilk olarak:**
-```
+
+İlk olarak aşağıdaki komutla aperfetch deposunu klonlayın:
+
+```bash
 aperium clone -github yigitkabak/aperfetch
 ```
-**son olarak şunu yapmanız yeterlidir:**
+
+Ardından son olarak şunları yapın:
+
+```bash
+cd aperfetch
+bash Scripts/linux.sh (temux ise termux.sh yazın.)
 ```
-bash install.sh
-```
-Sistemi başlatmak için terminalinize `aperfetch` yazmanız yeterlidir.
