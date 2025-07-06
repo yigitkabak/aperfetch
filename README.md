@@ -27,6 +27,26 @@ aperfetch, sisteminizin temel bilgilerini, hoş ve sade bir **ASCII logosu** eş
 
 aperfetch, sistem bilgilerini toplamak için çeşitli komut satırı araçlarından (örneğin `uname`, `lspci`, `getprop`, `wmic`, `sysctl`, `xrandr`, `dpkg`, vb.) ve Go'nun `gopsutil` kütüphanesinden faydalanır. Topladığı bu bilgileri, zarif bir ASCII logosuyla birlikte hizalı bir şekilde terminalinize yazdırır.
 
+## Desteklenen Sistemler
+* Ubuntu
+* Arch
+* NixOS
+* Android
+* Debian
+* Fedora
+* Pop!_OS
+* CachyOS
+* ZorinOS
+* OpenSUSE
+* Elemantary OS
+* Endeavour OS
+* Manjaro
+* Mint
+* Gentoo
+* Pardus
+* Windows
+* MacOS
+
 ## Kurulum
 
 İlk olarak aşağıdaki komutla aperfetch deposunu klonlayın:
