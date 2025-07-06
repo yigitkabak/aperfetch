@@ -50,7 +50,7 @@ NOT: `aperfetch ascii_distro` komudunu kullanarak istediğiniz bir distronun asc
        ;KMMMMMMMWXXWMMMMMMMk.      Disk: 9.83 GiB / 931.22 GiB
          "cooc*"    "*coo'"        Battery: 100% [Full]
                                    Locale: tr_TR
-                                   Local IP (wlan0): ********* (normalde IP adresini görebilirsin ben sansürledim)
+                                   Local IP (wlan0): *********
 
 ```
 
