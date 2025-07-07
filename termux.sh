@@ -16,7 +16,7 @@ check_dep() {
 }
 
 main() {
-    printf "${GREEN}Starting pixfetch Termux installation script...${NC}\n\n"
+    printf "${GREEN}Starting omnifetch Termux installation script...${NC}\n\n"
 
     printf "${YELLOW}Checking for required commands...${NC}\n"
     check_dep "go"
@@ -31,19 +31,19 @@ main() {
 
     printf "${YELLOW}Downloading and preparing Go modules...${NC}\n"
     if [ ! -f "go.mod" ]; then
-        go mod init pixfetch
+        go mod init omnifetch
     fi
     go mod tidy
     printf "${GREEN}Go modules prepared successfully.${NC}\n\n"
 
-    printf "${YELLOW}Compiling pixfetch... (This may take some time depending on your device's speed)${NC}\n"
-    go build -o pixfetch
+    printf "${YELLOW}Compiling omnifetch... (This may take some time depending on your device's speed)${NC}\n"
+    go build -o omnifetch
     printf "${GREEN}Compilation complete.${NC}\n\n"
 
     printf "${YELLOW}Installing pixfetch for Termux...${NC}\n"
     if mv pixfetch "$PREFIX/bin/"; then
         printf "\n${GREEN}---- INSTALLATION SUCCESSFUL! ----${NC}\n"
-        printf "You can now run the 'pixfetch' command from anywhere in Termux.\n"
+        printf "You can now run the 'omnifetch' command from anywhere in Termux.\n"
     else
         printf "\n${RED}---- INSTALLATION FAILED! ----${NC}\n"
         printf "Could not move the file to '$PREFIX/bin/'.\n"
