@@ -16,7 +16,7 @@ check_dep() {
 }
 
 main() {
-    printf "${GREEN}glintfetch kurulum betiği başlatılıyor...${NC}\n\n"
+    printf "${GREEN}pixfetch kurulum betiği başlatılıyor...${NC}\n\n"
 
     printf "${YELLOW}Gerekli komutlar kontrol ediliyor...${NC}\n"
     check_dep "go"
@@ -25,23 +25,23 @@ main() {
 
     printf "${YELLOW}Go modülleri indiriliyor ve hazırlanıyor...${NC}\n"
     if [ ! -f "go.mod" ]; then
-        go mod init glintfetch
+        go mod init pixfetch
     fi
     go mod tidy
     printf "${GREEN}Go modülleri başarıyla hazırlandı.${NC}\n\n"
 
-    printf "${YELLOW}glintfetch derleniyor...${NC}\n"
-    go build -o glintfetch
+    printf "${YELLOW}pixfetch derleniyor...${NC}\n"
+    go build -o pixfetch
     printf "${GREEN}Derleme tamamlandı.${NC}\n\n"
 
-    printf "${YELLOW}glintfetch sisteme kurulacak. Yönetici (sudo) parolası istenebilir.${NC}\n"
-    if sudo mv glintfetch /usr/local/bin/; then
+    printf "${YELLOW}pixfetch sisteme kurulacak. Yönetici (sudo) parolası istenebilir.${NC}\n"
+    if sudo mv pixfetch /usr/local/bin/; then
         printf "\n${GREEN}---- KURULUM BAŞARILI! ----${NC}\n"
         printf "Artık terminalde herhangi bir yerden 'glintfetch' komutunu çalıştırabilirsiniz.\n"
     else
         printf "\n${RED}---- KURULUM BAŞARISIZ! ----${NC}\n"
         printf "Dosya '/usr/local/bin/' dizinine taşınamadı.\n"
-        printf "İzinleri kontrol edin veya manuel olarak 'sudo mv glintfetch /usr/local/bin/' komutunu çalıştırın.\n"
+        printf "İzinleri kontrol edin veya manuel olarak 'sudo mv pixfetch /usr/local/bin/' komutunu çalıştırın.\n"
         exit 1
     fi
 }
