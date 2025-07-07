@@ -1,34 +1,34 @@
 ---
-# pixfetch: Sistem Bilgisi Aracı
+# pixfetch: System Information Tool
 
-pixfetch, sisteminizin temel bilgilerini, hoş ve sade bir **ASCII logosu** eşliğinde gösteren basit ve hızlı bir komut satırı aracıdır. Windows, macOS ve Linux (Termux dahil Android) sistemlerinde çalışacak şekilde tasarlanmıştır.
+pixfetch is a simple and fast command line tool that displays basic information about your system, accompanied by a nice and simple **ASCII logo**. It is designed to run on Windows, macOS, and Linux (including Android with Termux) systems.
 
-## Özellikler
+## Features
 
-* **Çoklu Platform Desteği:** Windows, macOS, Linux (Termux dahil Android) üzerinde çalışır.
-* **Minimalist Tasarım:** Tek bir şık ASCII logosu ile temiz ve düzenli bir çıktı sunar.
-* **Kapsamlı Sistem Bilgileri:** Aşağıdaki bilgileri görüntüler:
-    * Kullanıcı ve Host adı
-    * İşletim Sistemi bilgisi
-    * Kernel sürümü
-    * Çalışma süresi (Uptime)
-    * Kullanılan Shell
-    * GPU bilgisi
-    * Bellek kullanımı
-    * Disk kullanımı
-    * Yerel IP adresi
-    * Ekran çözünürlüğü
-    * Yüklü paket sayısı (dpkg, pacman, rpm, brew destekli)
-    * Cihaz üreticisi ve modeli
-    * Pil durumu (Android ve Linux için)
-* **Renkli Çıktı:** Bilgileri daha okunaklı hale getirmek için ANSI renk kodlarını kullanır.
+* **Multi-Platform Support:** Runs on Windows, macOS, and Linux (including Android with Termux).
+* **Minimalist Design:** Provides a clean and organised output with a single stylish ASCII logo.
+* **Comprehensive System Information:** Displays the following information:
+* User and host name
+* Operating system information
+* Kernel version
+* Uptime
+* Shell in use
+* GPU information
+* Memory usage
+* Disk usage
+    * Local IP address
+* Screen resolution
+* Number of installed packages (dpkg, pacman, rpm, brew supported)
+* Device manufacturer and model
+* Battery status (for Android and Linux)
+* **Colour Output:** Uses ANSI colour codes to make the information more readable.
 
-## Nasıl Çalışır?
+## How Does It Work?
 
-pixfetch, sistem bilgilerini toplamak için çeşitli komut satırı araçlarından (örneğin `uname`, `lspci`, `getprop`, `wmic`, `sysctl`, `xrandr`, `dpkg`, vb.) ve Go'nun `gopsutil` kütüphanesinden faydalanır. Topladığı bu bilgileri, zarif bir ASCII logosuyla birlikte hizalı bir şekilde terminalinize yazdırır.
+pixfetch uses various command-line tools (e.g., `uname`, `lspci`, `getprop`, `wmic`, `sysctl`, `xrandr`, `dpkg`, etc.) and Go's `gopsutil` library to collect system information. It prints this information to your terminal in a neat, aligned format alongside an elegant ASCII logo.
 
-NOT: `pixfetch ascii_distro` komudunu kullanarak istediğiniz bir distronun ascii yazısını kullanabilirsiniz!
-örnek:
+NOTE: You can use the ASCII text of any distro you want by using the `pixfetch ascii_distro` command!
+Example:
 ```
 ❯ pixfetch --ascii_distro macos
 
@@ -36,7 +36,7 @@ NOT: `pixfetch ascii_distro` komudunu kullanarak istediğiniz bir distronun asci
                    ,xNMM.          -----------------
                  .OMMMMo           OS: CachyOS
                  lMM"              Kernel: 6.15.5-2-cachyos
-       .;loddo:.  .olloddol;.      Uptime: 0 days, 0 hours, 46 mins
+       .;loddo:.  .olloddol;.      Uptime: 0 days, 0 hours, 46 minutes
      cKMMMMMMMMMMNWMMMMMMMMMM0:    Packages: 1128 (pacman)
    .KMMMMMMMMMMMMMMMMMMMMMMMWd.    DE: KDE
    XMMMMMMMMMMMMMMMMMMMMMMMX.      Shell: fish
@@ -49,12 +49,12 @@ NOT: `pixfetch ascii_distro` komudunu kullanarak istediğiniz bir distronun asci
       kMMMMMMMMMMMMMMMMMMMMMMd     Memory: 1.71 GiB / 7.64 GiB
        ;KMMMMMMMWXXWMMMMMMMk.      Disk: 9.83 GiB / 931.22 GiB
          "cooc*"    "*coo'"        Battery: 100% [Full]
-                                   Locale: tr_TR
+                                   Local setting: tr_TR
                                    Local IP (wlan0): *********
 
 ```
 
-## Desteklenen Sistemler
+## Supported Systems
 * Ubuntu
 * Arch
 * NixOS
@@ -65,7 +65,7 @@ NOT: `pixfetch ascii_distro` komudunu kullanarak istediğiniz bir distronun asci
 * CachyOS
 * ZorinOS
 * OpenSUSE
-* Elemantary OS
+* Elementary OS
 * Endeavour OS
 * Manjaro
 * Mint
@@ -74,17 +74,17 @@ NOT: `pixfetch ascii_distro` komudunu kullanarak istediğiniz bir distronun asci
 * Windows
 * MacOS
 
-## Kurulum
+## Installation
 
-İlk olarak aşağıdaki komutla aperfetch deposunu klonlayın:
+First, clone the aperfetch repository with the following command:
 
 ```bash
 aperium clone -github yigitkabak/pixfetch
 ```
 
-Ardından son olarak şunları yapın:
+Then, finally, do the following:
 
 ```bash
 cd pixfetch
-bash linux.sh (termux ise termux.sh yazın.)
+bash linux.sh (if using Termux, type termux.sh.)
 ```
