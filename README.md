@@ -1,5 +1,5 @@
 ---
-# aperfetch: Sistem Bilgisi Aracı
+# pixfetch: Sistem Bilgisi Aracı
 
 aperfetch, sisteminizin temel bilgilerini, hoş ve sade bir **ASCII logosu** eşliğinde gösteren basit ve hızlı bir komut satırı aracıdır. Windows, macOS ve Linux (Termux dahil Android) sistemlerinde çalışacak şekilde tasarlanmıştır.
 
@@ -30,7 +30,7 @@ aperfetch, sistem bilgilerini toplamak için çeşitli komut satırı araçları
 NOT: `aperfetch ascii_distro` komudunu kullanarak istediğiniz bir distronun ascii yazısını kullanabilirsiniz!
 örnek:
 ```
-❯ aperfetch --ascii_distro macos
+❯ pixfetch --ascii_distro macos
 
                       c.'          yigitkabak@yigitkabak
                    ,xNMM.          -----------------
@@ -79,12 +79,12 @@ NOT: `aperfetch ascii_distro` komudunu kullanarak istediğiniz bir distronun asc
 İlk olarak aşağıdaki komutla aperfetch deposunu klonlayın:
 
 ```bash
-aperium clone -github yigitkabak/glintfetch
+aperium clone -github yigitkabak/pixfetch
 ```
 
 Ardından son olarak şunları yapın:
 
 ```bash
-cd glintfetch
+cd pixfetch
 bash linux.sh (termux ise termux.sh yazın.)
 ```
