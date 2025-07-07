@@ -16,7 +16,7 @@ check_dep() {
 }
 
 main() {
-    printf "${GREEN}aperfetch Termux kurulum betiği başlatılıyor...${NC}\n\n"
+    printf "${GREEN}glintfetch Termux kurulum betiği başlatılıyor...${NC}\n\n"
 
     printf "${YELLOW}Gerekli komutlar kontrol ediliyor...${NC}\n"
     check_dep "go"
@@ -31,19 +31,19 @@ main() {
 
     printf "${YELLOW}Go modülleri indiriliyor ve hazırlanıyor...${NC}\n"
     if [ ! -f "go.mod" ]; then
-        go mod init aperfetch
+        go mod init glintfetch
     fi
     go mod tidy
     printf "${GREEN}Go modülleri başarıyla hazırlandı.${NC}\n\n"
 
-    printf "${YELLOW}aperfetch derleniyor... (Bu işlem cihazınızın hızına göre biraz zaman alabilir)${NC}\n"
-    go build -o aperfetch
+    printf "${YELLOW}glintfetch derleniyor... (Bu işlem cihazınızın hızına göre biraz zaman alabilir)${NC}\n"
+    go build -o glintfetch
     printf "${GREEN}Derleme tamamlandı.${NC}\n\n"
 
-    printf "${YELLOW}aperfetch, Termux için kuruluyor...${NC}\n"
-    if mv aperfetch "$PREFIX/bin/"; then
+    printf "${YELLOW}glintfetch, Termux için kuruluyor...${NC}\n"
+    if mv glintfetch "$PREFIX/bin/"; then
         printf "\n${GREEN}---- KURULUM BAŞARILI! ----${NC}\n"
-        printf "Artık Termux'ta herhangi bir yerden 'aperfetch' komutunu çalıştırabilirsiniz.\n"
+        printf "Artık Termux'ta herhangi bir yerden 'glintfetch' komutunu çalıştırabilirsiniz.\n"
     else
         printf "\n${RED}---- KURULUM BAŞARISIZ! ----${NC}\n"
         printf "Dosya '$PREFIX/bin/' dizinine taşınamadı.\n"
