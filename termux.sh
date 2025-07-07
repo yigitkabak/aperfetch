@@ -40,8 +40,8 @@ main() {
     go build -o omnifetch
     printf "${GREEN}Compilation complete.${NC}\n\n"
 
-    printf "${YELLOW}Installing pixfetch for Termux...${NC}\n"
-    if mv pixfetch "$PREFIX/bin/"; then
+    printf "${YELLOW}Installing omnifetch for Termux...${NC}\n"
+    if mv omnifetch "$PREFIX/bin/"; then
         printf "\n${GREEN}---- INSTALLATION SUCCESSFUL! ----${NC}\n"
         printf "You can now run the 'omnifetch' command from anywhere in Termux.\n"
     else
