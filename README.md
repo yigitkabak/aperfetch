@@ -1,7 +1,7 @@
 ---
 # pixfetch: Sistem Bilgisi Aracı
 
-aperfetch, sisteminizin temel bilgilerini, hoş ve sade bir **ASCII logosu** eşliğinde gösteren basit ve hızlı bir komut satırı aracıdır. Windows, macOS ve Linux (Termux dahil Android) sistemlerinde çalışacak şekilde tasarlanmıştır.
+pixfetch, sisteminizin temel bilgilerini, hoş ve sade bir **ASCII logosu** eşliğinde gösteren basit ve hızlı bir komut satırı aracıdır. Windows, macOS ve Linux (Termux dahil Android) sistemlerinde çalışacak şekilde tasarlanmıştır.
 
 ## Özellikler
 
@@ -25,9 +25,9 @@ aperfetch, sisteminizin temel bilgilerini, hoş ve sade bir **ASCII logosu** eş
 
 ## Nasıl Çalışır?
 
-aperfetch, sistem bilgilerini toplamak için çeşitli komut satırı araçlarından (örneğin `uname`, `lspci`, `getprop`, `wmic`, `sysctl`, `xrandr`, `dpkg`, vb.) ve Go'nun `gopsutil` kütüphanesinden faydalanır. Topladığı bu bilgileri, zarif bir ASCII logosuyla birlikte hizalı bir şekilde terminalinize yazdırır.
+pixfetch, sistem bilgilerini toplamak için çeşitli komut satırı araçlarından (örneğin `uname`, `lspci`, `getprop`, `wmic`, `sysctl`, `xrandr`, `dpkg`, vb.) ve Go'nun `gopsutil` kütüphanesinden faydalanır. Topladığı bu bilgileri, zarif bir ASCII logosuyla birlikte hizalı bir şekilde terminalinize yazdırır.
 
-NOT: `aperfetch ascii_distro` komudunu kullanarak istediğiniz bir distronun ascii yazısını kullanabilirsiniz!
+NOT: `pixfetch ascii_distro` komudunu kullanarak istediğiniz bir distronun ascii yazısını kullanabilirsiniz!
 örnek:
 ```
 ❯ pixfetch --ascii_distro macos
