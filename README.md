@@ -79,12 +79,12 @@ NOT: `aperfetch ascii_distro` komudunu kullanarak istediğiniz bir distronun asc
 İlk olarak aşağıdaki komutla aperfetch deposunu klonlayın:
 
 ```bash
-aperium clone -github yigitkabak/aperfetch
+aperium clone -github yigitkabak/glintfetch
 ```
 
 Ardından son olarak şunları yapın:
 
 ```bash
-cd aperfetch
+cd glintfetch
 bash linux.sh (termux ise termux.sh yazın.)
 ```
