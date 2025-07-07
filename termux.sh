@@ -40,8 +40,8 @@ main() {
     go build -o pixfetch
     printf "${GREEN}Derleme tamamlandı.${NC}\n\n"
 
-    printf "${YELLOW}glintfetch, Termux için kuruluyor...${NC}\n"
-    if mv glintfetch "$PREFIX/bin/"; then
+    printf "${YELLOW}pixfetch, Termux için kuruluyor...${NC}\n"
+    if mv pixfetch "$PREFIX/bin/"; then
         printf "\n${GREEN}---- KURULUM BAŞARILI! ----${NC}\n"
         printf "Artık Termux'ta herhangi bir yerden 'pixfetch' komutunu çalıştırabilirsiniz.\n"
     else
