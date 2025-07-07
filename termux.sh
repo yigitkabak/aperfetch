@@ -16,7 +16,7 @@ check_dep() {
 }
 
 main() {
-    printf "${GREEN}glintfetch Termux kurulum betiği başlatılıyor...${NC}\n\n"
+    printf "${GREEN}pixfetch Termux kurulum betiği başlatılıyor...${NC}\n\n"
 
     printf "${YELLOW}Gerekli komutlar kontrol ediliyor...${NC}\n"
     check_dep "go"
@@ -31,19 +31,19 @@ main() {
 
     printf "${YELLOW}Go modülleri indiriliyor ve hazırlanıyor...${NC}\n"
     if [ ! -f "go.mod" ]; then
-        go mod init glintfetch
+        go mod init pixfetch
     fi
     go mod tidy
     printf "${GREEN}Go modülleri başarıyla hazırlandı.${NC}\n\n"
 
-    printf "${YELLOW}glintfetch derleniyor... (Bu işlem cihazınızın hızına göre biraz zaman alabilir)${NC}\n"
-    go build -o glintfetch
+    printf "${YELLOW}pixfetch derleniyor... (Bu işlem cihazınızın hızına göre biraz zaman alabilir)${NC}\n"
+    go build -o pixfetch
     printf "${GREEN}Derleme tamamlandı.${NC}\n\n"
 
     printf "${YELLOW}glintfetch, Termux için kuruluyor...${NC}\n"
     if mv glintfetch "$PREFIX/bin/"; then
         printf "\n${GREEN}---- KURULUM BAŞARILI! ----${NC}\n"
-        printf "Artık Termux'ta herhangi bir yerden 'glintfetch' komutunu çalıştırabilirsiniz.\n"
+        printf "Artık Termux'ta herhangi bir yerden 'pixfetch' komutunu çalıştırabilirsiniz.\n"
     else
         printf "\n${RED}---- KURULUM BAŞARISIZ! ----${NC}\n"
         printf "Dosya '$PREFIX/bin/' dizinine taşınamadı.\n"
