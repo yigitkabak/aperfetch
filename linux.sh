@@ -16,7 +16,7 @@ check_dep() {
 }
 
 main() {
-    printf "${GREEN}Starting pixfetch installation script...${NC}\n\n"
+    printf "${GREEN}Starting omnifetch installation script...${NC}\n\n"
 
     printf "${YELLOW}Checking for required commands...${NC}\n"
     check_dep "go"
@@ -25,23 +25,23 @@ main() {
 
     printf "${YELLOW}Downloading and preparing Go modules...${NC}\n"
     if [ ! -f "go.mod" ]; then
-        go mod init pixfetch
+        go mod init omnifetch
     fi
     go mod tidy
     printf "${GREEN}Go modules prepared successfully.${NC}\n\n"
 
-    printf "${YELLOW}Compiling pixfetch...${NC}\n"
-    go build -o pixfetch
+    printf "${YELLOW}Compiling omnifetch...${NC}\n"
+    go build -o omnifetch
     printf "${GREEN}Compilation complete.${NC}\n\n"
 
-    printf "${YELLOW}pixfetch will be installed to your system. You may be asked for your administrator (sudo) password.${NC}\n"
-    if sudo mv pixfetch /usr/local/bin/; then
+    printf "${YELLOW}omnifetch will be installed to your system. You may be asked for your administrator (sudo) password.${NC}\n"
+    if sudo mv omnifetch /usr/local/bin/; then
         printf "\n${GREEN}---- INSTALLATION SUCCESSFUL! ----${NC}\n"
-        printf "You can now run the 'pixfetch' command from anywhere in your terminal.\n"
+        printf "You can now run the 'omnifetch' command from anywhere in your terminal.\n"
     else
         printf "\n${RED}---- INSTALLATION FAILED! ----${NC}\n"
         printf "Could not move the file to '/usr/local/bin/'.\n"
-        printf "Please check permissions or manually run 'sudo mv pixfetch /usr/local/bin/'.\n"
+        printf "Please check permissions or manually run 'sudo mv omnifetch /usr/local/bin/'.\n"
         exit 1
     fi
 }
