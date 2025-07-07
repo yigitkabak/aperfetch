@@ -37,7 +37,7 @@ main() {
     printf "${YELLOW}pixfetch sisteme kurulacak. Yönetici (sudo) parolası istenebilir.${NC}\n"
     if sudo mv pixfetch /usr/local/bin/; then
         printf "\n${GREEN}---- KURULUM BAŞARILI! ----${NC}\n"
-        printf "Artık terminalde herhangi bir yerden 'glintfetch' komutunu çalıştırabilirsiniz.\n"
+        printf "Artık terminalde herhangi bir yerden 'pixfetch' komutunu çalıştırabilirsiniz.\n"
     else
         printf "\n${RED}---- KURULUM BAŞARISIZ! ----${NC}\n"
         printf "Dosya '/usr/local/bin/' dizinine taşınamadı.\n"
