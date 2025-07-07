@@ -1,7 +1,7 @@
 ---
-# pixfetch: System Information Tool
+# omnifetch: System Information Tool
 
-pixfetch is a simple and fast command line tool that displays basic information about your system, accompanied by a nice and simple **ASCII logo**. It is designed to run on Windows, macOS, and Linux (including Android with Termux) systems.
+omnifetch is a simple and fast command line tool that displays basic information about your system, accompanied by a nice and simple **ASCII logo**. It is designed to run on Windows, macOS, and Linux (including Android with Termux) systems.
 
 ## Features
 
@@ -25,12 +25,12 @@ pixfetch is a simple and fast command line tool that displays basic information 
 
 ## How Does It Work?
 
-pixfetch uses various command-line tools (e.g., `uname`, `lspci`, `getprop`, `wmic`, `sysctl`, `xrandr`, `dpkg`, etc.) and Go's `gopsutil` library to collect system information. It prints this information to your terminal in a neat, aligned format alongside an elegant ASCII logo.
+omnifetch uses various command-line tools (e.g., `uname`, `lspci`, `getprop`, `wmic`, `sysctl`, `xrandr`, `dpkg`, etc.) and Go's `gopsutil` library to collect system information. It prints this information to your terminal in a neat, aligned format alongside an elegant ASCII logo.
 
 NOTE: You can use the ASCII text of any distro you want by using the `pixfetch ascii_distro` command!
 Example:
 ```
-❯ pixfetch --ascii_distro macos
+❯ omnifetch --ascii_distro macos
 
                       c.'          yigitkabak@yigitkabak
                    ,xNMM.          -----------------
@@ -79,12 +79,12 @@ Example:
 First, clone the aperfetch repository with the following command:
 
 ```bash
-aperium clone -github yigitkabak/pixfetch
+aperium clone -github yigitkabak/omnifetch
 ```
 
 Then, finally, do the following:
 
 ```bash
-cd pixfetch
+cd omnifetch
 bash linux.sh (if using Termux, type termux.sh.)
 ```
