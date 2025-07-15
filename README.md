@@ -88,7 +88,6 @@ Then, finally, do the following:
 cd omnifetch
 bash linux.sh (if using Termux, type termux.sh.)
 ```
----
 
 ## If you are using aperium
 
@@ -97,4 +96,3 @@ bash linux.sh (if using Termux, type termux.sh.)
 aper install omnifetch.apr
 ```
 and do what is written in the `INSTALL` file.
-
