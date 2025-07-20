@@ -93,6 +93,6 @@ bash linux.sh (if using Termux, type termux.sh.)
 
 **all you have to do is:**
 ```
-aper install omnifetch.apr
+aper install omnifetch.apm
 ```
 and do what is written in the `INSTALL` file.
